@@ -21,6 +21,22 @@ public class FichierCompte {
         }
     }
 
+    public String getNomDuFichier() {
+        return nomDuFichier;
+    }
+
+    public ObjectOutputStream getfWo() {
+        return fWo;
+    }
+
+    public ObjectInputStream getfRo() {
+        return fRo;
+    }
+
+    public char getMode() {
+        return mode;
+    }
+
     public void fermer() {
         try {
             if (mode == 'R' || mode == 'L') fRo.close();
