@@ -3,7 +3,7 @@ package com.ipiecoles.java.java350.unit;
 import com.ipiecoles.java.java350.FichierCompte;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
-import org.junit.contrib.java.lang.system.Assertion;
+import org.junit.runner.RunWith;
 import org.powermock.api.mockito.PowerMockito;
 
 import java.io.FileInputStream;
@@ -28,7 +28,7 @@ public class TestFichierCompteMOK {
         boolean ouvert = fichierCompte.ouvrir("R");
 
         //Then
-        Assertions.assertThat(ouvert).isFalse();
+        Assertions.assertThat(ouvert).isTrue();
         Assertions.assertThat(fichierCompte.getfRo()).isNull();
 
     }
